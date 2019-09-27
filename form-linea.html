@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+
+    <!-- carga del css de bootstrap  -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+
+    <!-- Carga de los iconos de font awesome  -->
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+
+   <section class="bg-light p-3 border">
+        <div class="container">
+            <div class="row justify-content-lg-between">
+                <div class="col-12 col-md-auto">
+                    <a href="#">
+                        <img src="images/logo.svg" alt="logo del sitio" width="120">
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-auto">
+                    <form action="" role="form" class="form-inline">
+                        <label for="nombre" class="sr-only">Nombre</label>
+
+                        <div class="input-group mb-2 mb-sm-0 mr-sm-1">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input type="text" name="nombre" id="nombre" class="form-control" placeholder="Nombre de usuario" size="10">
+                        </div>
+                        <label for="password" class="sr-only">Contraseña</label>
+                        
+                        <div class="input-group mb-2 mb-sm-0 mr-sm-1">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-key"></i></span>
+                            </div>
+                            <input type="text" name="password" id="password" class="form-control" placeholder="Contraseña" size="10">
+
+                        </div>
+                        <button type="submit" class="btn btn-primary">Ingresar</button>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+   </section>
+
+    <!-- Carga de jQuery  -->
+    <script src="js/jquery-3.4.1.min.js" ></script>
+
+    <!-- Carga del popper  -->
+    <script src="js/popper.min.js"></script>
+
+    <!-- Cargar bootstrap  -->
+    <script src="/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+</body>
+</html>
