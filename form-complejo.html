@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Formulario</title>
+
+    <!-- carga del css de bootstrap  -->
+
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+
+    <!-- Carga de los iconos de font awesome  -->
+    <link rel="stylesheet" href="css/all.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-9">
+                <form action="" class="bg-light my-3 p-3 border rounded">
+                    <h2 class="mb-4">Solicitud de pedido</h2>
+
+                    <div class="form-row mb-4">
+                         <h4 class="col-12 text-info mb-3">
+                            <span class="fa-stack h5 mb-0">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-user fa-stack-1x fa-inverse"></i>
+                              </span>
+                              Información personal
+                         </h4>
+
+                         <div class="form-group col-12 col-sm-6">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" name="nombre" id="nombre" placeholder="Ejem: Jorge Ivan" class="form-control">
+                         </div>
+
+                         <div class="form-group col-12 col-sm-6">
+                             <label for="apellido">Apellidos:</label>
+                             <input type="text" class="form-control" name="apellido" id="apellido" placeholder="Ejem: Isaza Galvis">
+                         </div>
+
+                         <div class="form-group col-12 col-sm-6">
+                             <label for="email">Email:</label>
+                             <input type="email" class="form-control" name="email" id="email" placeholder="Ejem: george@utp.edu.co">
+                         </div>
+
+                         <div class="form-group col-12 col-sm-6">
+                            <label for="telefono">Telefono:</label>
+                            <input type="text" class="form-control" name="telefono" id="telefono" placeholder="Ejem: 3303798">
+                         </div>
+                    </div>     
+
+
+                    <div class="form-row mb-4">
+                        <h4 class="col-12 text-info mb-3">
+                            <span class="fa-stack h5 mb-0">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-map-marker-alt fa-stack-1x fa-inverse"></i>
+                              </span>
+                              Dirección de envio
+                        </h4>
+
+                        <div class="form-group col-12">
+                            <label for="direccion">Dirección:</label>
+                            <input type="text" class="form-control" name="direccion" id="direccion" placeholder="Ejem: m17 c10">
+                        </div>
+
+                        <div class="form-group col-6 col-sm-4">
+                            <label for="provincia">Provincia:</label>
+                            <input type="text" class="form-control" name="provincia" id="provincia" placeholder="Ejem: Risaralda">
+                        </div>
+
+                        <div class="form-group col-6 col-sm-4">
+                            <label for="ciudad">Ciudad:</label>
+                            <input type="text" class="form-control" name="ciudad" id="ciudad" placeholder="Ejem: Pereira">
+                        </div>
+
+                        <div class="form-group col-12 col-sm-4">
+                            <label for="codigo-postal">Código postal:</label>
+                            <input type="text" class="form-control" name="codigo-postal" id="codigo-postal" placeholder="Ejem: 10006">
+                        </div>
+                    </div>
+
+                    
+                    <div class="form-row mb-4">
+                        <h4 class="col-12 text-info mb-3">
+                            <span class="fa-stack h5 mb-0">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fas fa-calendar-alt fa-stack-1x fa-inverse"></i>
+                              </span>
+                              Fecha de envio
+                        </h4>
+                        <div class="col-12 col-md-6 ">
+
+                            <div class="form-row">
+
+                                <div class="form-group col-12 col-sm-6 col-md-12">
+                                    <label for="fecha-envio">Fecha de envio:</label>
+                                    <input type="text" class="form-control" name="fecha-envio" id="fecha-envio" placeholder="Ejem: hoy">
+                                </div>
+    
+                                <div class="form-group col-12 col-sm-6 col-md-12">
+                                    <label for="hora-envio">Hora de envio</label>
+                                    <input type="text" class="form-control" name="hora-envio" id="hora-envio" placeholder="Ejem: 9:30 am">
+                                </div>
+                            </div>
+                        
+                        </div>
+
+                        <div class="form-group col-12 col-md-6">
+                            <label for="comentarios">Comentarios:</label>
+                            <textarea name="comentarios" id="comentarios"  rows="5" class="form-control"></textarea>
+                        </div>
+                    </div>
+                
+                    <div class="form-row">
+                        <div class="col-12 col-md-3">
+                            <button type="submit" class="btn btn-primary btn-block mb-2">
+                                <i class="fas fa-location-arrow pr-1"></i>Enviar</button>
+                        </div>
+
+                        <div class="col-12 col-md-3">
+                            <button type="reset" class="btn btn-secondary btn-block">
+                            <i class="fas fa-times pr-1"></i>Cancelar</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Carga de jQuery  -->
+    <script src="js/jquery-3.4.1.min.js" ></script>
+
+    <!-- Carga del popper  -->
+    <script src="js/popper.min.js"></script>
+
+    <!-- Cargar bootstrap  -->
+    <script src="/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    
+</body>
+</html>
