@@ -317,6 +317,7 @@ oscurecer una imagen
 ------------------------------------------------------------------*/
 #te-ayudamos {
     position: relative;
+    -webkit-transform: skew(0, 6deg);
     transform: skew(0,6deg);
 }
 #te-ayudamos::before {
@@ -328,7 +329,8 @@ oscurecer una imagen
     right: 0;
     bottom: 0;
 }
-#te-ayudamos .container{    
+#te-ayudamos .container{ 
+    -webkit-transform: skew(0, 6deg);   
     transform: skew(0,-6deg);
 }
 
@@ -353,6 +355,50 @@ oscurecer una imagen
     background-color: $secundario;
 }
 
+
+/*-----------------------------------------------------------------
+11. ESTILOS PARA "#nuestra-app"
+------------------------------------------------------------------*/
+#nuestra-app::before {
+    content: "";
+    position: absolute;
+    background: rgba(0, 0, 0, 0.50);
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.contador-linea {
+    background-color: $principal;
+    width: 4rem;
+    height: .4rem;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    transition: all .5s ease;
+}
+
+#premios .col-6:hover .contador-linea {
+    bottom: 1rem;
+    transform: translateX(-50%) rotate(180deg);
+    background-color: $secundario;
+}
+
+
+/*-----------------------------------------------------------------
+16. ESTILOS PARA "#contacto"
+------------------------------------------------------------------*/
+#contacto .detalle-rectangulo {
+    
+    position: absolute;
+    width: 2rem;
+    height: 2rem;
+    background: $principal;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%) translateY(50%) rotate(45deg);
+}
 
 /*-----------------------------------------------------------------
 X. EMPIEZA EL SHOW DE LAS MEDIAS QUERIES
