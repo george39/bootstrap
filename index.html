@@ -15,6 +15,15 @@
     <!-- Carga de los iconos de font awesome  -->
     <link rel="stylesheet" href="css/all.css">
 
+    <!-- Carga del CSS de Swiper  -->
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <!-- Carga del CSS de venobox  -->
+    <link rel="stylesheet" href="css/venobox.css">
+
+    <!-- Carga del CSS de jarallax  -->
+    <link rel="stylesheet" href="css/jarallax.css">
+
     <!-- Carga de css personalizado  -->
     <link rel="stylesheet" href="css/estilos.css">
 
@@ -23,14 +32,15 @@
 
 <body>
    
+    <!-- Seccion #barra contacto  -->
     <section id="barra-contacto" class="bg-primary text-white py-3 text-center">
         <div class="container">
-            <div class="row">
-                <div class="col-12">
+            <div class="row justify-content-md-between align-items-sm-center">
+                <div class="col-12 col-sm-auto">
                     <i class="fas fa-map-marker-alt mr-1"></i><span>Jorge Ivan Isaza</span>
                 </div>
 
-                <div class="col-12">
+                <div class="col-12 col-sm-auto">
                     <ul class="redes-sociales list-unstyled d-inline-flex mb-0">
                         <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
                         <li><a href="#"><i class="fab fa-twitter"></i></a></li>
@@ -42,6 +52,204 @@
         </div>
     </section>
 
+
+    <!-- Seccion #detalles-encabezado  -->
+    <section id="detales-encabezado" class="d-none d-md-block py-3">
+        <div class="container">
+            <div class="row justify-content-md-between align-items-md-center">
+                <div class="col-auto ">
+                    <a href="#" class="logo">
+                        <img src="images/logo.svg" alt="Logo del sitio" width="200">
+                    </a>
+                </div>
+
+                <div class="col-auto">
+                    <i class="fas fa-phone-alt fa-2x  align-middle  text-primary"></i>
+                    <span class="font-weight-bold h5 ml-2 ">3127558456</span>
+                </div>
+
+                <div class="col-auto">
+                    <i class="fas fa-envelope fa-2x  align-middle  text-primary"></i>
+                    <span class="font-weight-bold h5 ml-2 ">george@utp.edu.co</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Sección menu de navegacion  -->
+    <nav id="menu-navegacion" class="navbar navbar-dark bg-secondary navbar-expand-md">
+        <div class="container">
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu-principal"
+            aria-expanded="false" aria-label="menú principal">
+            <span class="boton-menu"></span>
+            </button>
+            <a href="#" class="btn btn-primary order-md-1">Reservar una cita</a>
+
+            <div class="collapse navbar-collapse" id="menu-principal">
+                <ul class="navbar-nav mt-3 mt-md-0">
+                    <li class="nav-item mb-1 mb-md-0 mr-md-1"><a href="#" class="nav-link active">Inicio</a></li>
+                    <li class="nav-item mb-1 mb-md-0 mr-md-1"><a href="#" class="nav-link">Nosotros</a></li>
+                    <li class="nav-item mb-1 mb-md-0 mr-md-1"><a href="#" class="nav-link">Primios</a></li>
+                    <li class="nav-item mb-1 mb-md-0 mr-md-1"><a href="#" class="nav-link">Nuestra APP</a></li>
+                    <li class="nav-item mb-1 mb-md-0 mr-md-0"><a href="#" class="nav-link">Contacto</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+<!-- Seccion #animacion -->
+<section id="animacion"  class="swiper-container">
+    
+    <div class="swiper-wrapper">
+            <div class="swiper-slide d-flex justify-content-center align-items-center" style="background-image:url('images/fondo-slide-1.jpg')">
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-9 col-sm-11">
+                            <h2 class="display-4 font-weight-bold">
+                                Creamos sonrisas brillantes que hablarán por ti.
+                            </h2>
+                            <a href="#" class="btn btn-primary">reservar una cita</a>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+            <div class="swiper-slide d-flex justify-content-center align-items-center" style="background-image:url('images/fondo-slide-2.jpg')">
+                
+                <div class="container ">
+                    <div class="row justify-content-center">
+                        <div class="col-9 col-sm-11">
+                            <h2 class="display-4 font-weight-bold">
+                                Recervar una cita ahora es muy fácil.
+                            </h2>
+                            <a href="#" class="btn btn-primary">reservar una cita</a>
+                        </div>
+                    </div>
+                </div> 
+
+            </div>
+            <div class="swiper-slide d-flex justify-content-center align-items-center" style="background-image:url('images/fondo-slide-3.jpg')">
+            
+                <div class="container">
+                    <div class="row justify-content-center">
+                        <div class="col-9 col-sm-11">
+                            <h2 class="display-4 font-weight-bold">
+                                Disponible las 24 horas y los 7 días de las semana.
+                            </h2>
+                            <a href="#" class="btn btn-primary">reservar una cita</a>
+                        </div>
+                    </div>
+                </div> 
+
+            </div>
+            
+    </div>
+
+    <!-- Botones de navegacion -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+
+    <!-- Botones de paginacion -->
+    <div class="swiper-pagination"></div>
+            
+    
+</section> 
+
+<!-- seccion #bienvenidos -->
+<section id="bienvenidos" class="py-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-lg-6 text-center">
+                <div class="contenedor-video d-inline-block position-relative text-truncate">
+                    <img src="images/fondo-video.jpg" alt="Imagen del video promocional del sitio" class="img-fluid">
+                
+                    <a href="https://www.youtube.com/watch?v=D80L0t1NlKE" class="venobox-video" data-vbtype="video"><i class="fas fa-play"></i></a>
+                </div>
+            </div>
+            <div class="col-12 col-lg-6 pt-4 pt-lg-0 text-center text-lg-left">
+                <h2 class="display-4 font-weight-bold text-secondary mt-lg-n2">
+                    BIENVENIDO AL DESARROLLO <span class="text-primary"> WEB CON BOOTSTRAP</span>
+                </h2>
+                <h6 class="text-black-50 ">SOMOS PARTE DE TI</h6>
+                <p>
+                    Proporcionamos atención médica de la más alta calidad, tratamiento individualizado por los 
+                    prncipales expertos del país y en el menor tiempo posible. Te invitamos a conocer un poco más.
+                </p>
+                <a href="#" class="btn btn-primary mt-3">Leer mas</a>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<!-- seccion #te-ayudamos -->
+<section id="te-ayudamos" class="bg-secondary text-white text-center py-5 jarallax" data-jarallax data-speed="0.7">
+    <picture class="jarallax-img">
+        <source media="(min-width:1200px)" srcset="images/fondo-te-ayudamos-xl.jpg">
+        <source media="(min-width:768px)" srcset="images/fondo-te-ayudamos-md.jpg">
+        <img srcset="images/fondo-te-ayudamos.jpg" alt="Fondo como podemos ayudarte" class="w-100">
+    </picture>
+
+    <div class="container">
+        <div class="row py-5">
+            <div class="col-12">
+                <h2 class="display-4 font-weight-bold">¿CÓMO PODEMOS AYUDARTE?</h2>
+                <p>Ofrecemos una amplia gama de procedimientos para ayudarlo a obtener la sonrisa perfecta.</p>
+                <a href="#" class="btn btn-primary">Reservar una cita</a>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+
+<!-- Seccion #premios -->
+<section id="premios" class="py-5 text-center">
+    <div class="container py-5">
+        <h2 class="display-4 font-weight-bold text-secondary">NUESTRA CLÍNICA EN NÚMEROS</h2>
+        <h2 class="text-black-50">TENEMOS ALGUNOS NÚMEORS QUE MOSTRARTE</h2>
+
+        <div class="row">
+            <div class="col-6 col-md-3 py-4">
+                <i class="far fa-calendar-alt text-primary display-4 mb-2"></i>
+                <div class="font-weight-bold text-secondary h2">
+                    <span class="counter" data-counterup-beginat="0" data-counterUp-time="500">12</span>
+                </div>
+                <h6>Clientes satisfechos</h6>
+                <div class="contador-linea"></div>
+            </div>
+            <div class="col-6 col-md-3 py-4">
+                <i class="fab fa-angellist text-primary display-4 mb-2"></i>
+                <div class="font-weight-bold text-secondary h2">
+                    <span class="counter" data-counterup-beginat="0" data-counterUp-time="1000">156</span>
+                </div>
+                <h6>Años de experiencia</h6>
+                <div class="contador-linea"></div>
+            </div>
+            <div class="col-6 col-md-3 py-4">
+                <i class="fas fa-award text-primary display-4 mb-2"></i>
+                <div class="font-weight-bold text-secondary h2">
+                    <span class="counter" data-counterup-beginat="0" data-counterUp-time="1500">120</span>
+                </div>
+                <h6>Premios obtenidos</h6>
+                <div class="contador-linea"></div></div>
+            <div class="col-6 col-md-3 py-4">
+                <i class="fas fa-thumbs-up text-primary display-4 mb-2"></i>
+                <div class="font-weight-bold text-secondary h2">
+                    <span class="counter" data-counterup-beginat="0" data-counterUp-time="2000">100</span><span>%</span>
+                </div>
+                <h6>Años de experiencia</h6>
+                <div class="contador-linea"></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
     
     <!-- Carga de jQuery  -->
     <script src="js/jquery-3.4.1.min.js" ></script>
@@ -49,8 +257,26 @@
     <!-- Carga del popper  -->
     <script src="js/popper.min.js"></script>
 
-    <!-- Cargar bootstrap  -->
-    <script src="/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Carga de bootstrap -->
+    <script src="js/bootstrap.min.js" ></script>
+    
+     <!-- Carga de Swiper  -->
+     <script src="js/swiper.min.js"></script>
+
+     <!-- Carga de venobox  -->
+     <script src="js/venobox.min.js"></script>
+
+     <!-- Carga de jarallax  -->
+     <script src="js/jarallax.min.js"></script>
+
+     <!-- Carga de jquery.waypoints  -->
+     <script src="js/jquery.waypoints.min.js"></script>
+
+      <!-- Carga de jquery.counter  -->
+      <script src="js/jquery.counterup.min.js"></script>
+
+     <!-- Archivo para configurar e iniciar las funciones de los scripts -->
+    <script src="js/mis-scripts.js" ></script>
 
     
 </body>
